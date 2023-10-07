@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Application.Interfaces;
+﻿using Application.Interfaces;
+using Application.Validations;
+using FluentValidation.Results;
 using Infrastructure.Services;
 using Mapster;
 
@@ -29,7 +26,19 @@ public class GetWeatherByCityNameHandler : IApplicationHandler<GetWeatherByCityN
 
     public async Task<GetWeatherByCityNameResponse> Handle(GetWeatherByCityNameRequest request)
     {
+        var validator = new GetWeatherValidation();
+        ValidationResult result = validator.Validate(request);
+
+        if (!result.IsValid)
+        {
+            throw new ApplicationException(string.Join("\n", result.Errors));
+        }
+
         var response = await _weatherService.GetWeather(request.CityName);
+        if (response.Current == null)
+        {
+            throw new Exception($"Cant find weather info for {request.CityName}");
+        }
         return response.Adapt<GetWeatherByCityNameResponse>();
     }
 }
