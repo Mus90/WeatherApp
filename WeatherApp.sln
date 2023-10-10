@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "D:\WorkSpace\WeatherApp\src\Client\Client.csproj", "{8B1ED8D4-4283-425C-936B-DA971A44E430}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "src\Client\Client.csproj", "{8B1ED8D4-4283-425C-936B-DA971A44E430}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A8BF0E98-C74C-4553-8E75-801029C78B36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "D:\WorkSpace\WeatherApp\src\Infrastructure\Infrastructure.csproj", "{EBA07DB9-BE79-472C-B402-71573BF7ACE1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "src\Infrastructure\Infrastructure.csproj", "{EBA07DB9-BE79-472C-B402-71573BF7ACE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "D:\WorkSpace\WeatherApp\src\Application\Application.csproj", "{5D0F3E9A-6499-451E-A6ED-C1E5F63CF1E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\Application\Application.csproj", "{5D0F3E9A-6499-451E-A6ED-C1E5F63CF1E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "D:\WorkSpace\WeatherApp\src\Domain\Domain.csproj", "{037C54DF-BBF9-435B-9ABE-643BDBE575AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Domain\Domain.csproj", "{037C54DF-BBF9-435B-9ABE-643BDBE575AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
